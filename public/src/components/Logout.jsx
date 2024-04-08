@@ -13,16 +13,16 @@ export default function Logout() {
     // navigate('/')
 }
   const handleVideoCall = async() => {
-    
+    window.location.href = "https://video-call-steel.vercel.app";
   }
   
   return (
     <>
-      <Button onClick={handleClick}>
-        <BiPowerOff />
-      </Button>
       <Button onClick={handleVideoCall}>
         <IoIosVideocam />
+      </Button>
+      <Button onClick={handleClick}>
+        <BiPowerOff />
       </Button>
     </>
   );

@@ -1,3 +1,4 @@
+// export const host = "https://vision-chat-backend.vercel.app";
 export const host = "http://localhost:5001";
 export const loginRoute = `${host}/api/auth/login`;
 export const registerRoute = `${host}/api/auth/register`;

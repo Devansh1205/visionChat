@@ -5,7 +5,6 @@ import Logout from "./Logout";
 import { v4 as uuidv4 } from "uuid";
 import axios from "axios";
 import { sendMessageRoute, recieveMessageRoute } from "../utils/APIRoutes";
-import VideoCall from "./VideoCall";
 
 export default function ChatContainer({ currentChat, socket }) {
   const [messages, setMessages] = useState([]);
@@ -85,7 +84,6 @@ export default function ChatContainer({ currentChat, socket }) {
           </div>
         </div>
         <Logout />
-        <VideoCall />
       </div>
       <div className="chat-messages">
         {messages.map((message) => {
